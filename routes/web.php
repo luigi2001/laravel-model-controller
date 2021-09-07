@@ -13,18 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/comics', function () {
-    $data = config('comics');
-    $data = ['comics' => $data];
-    return view('main', $data);
-})->name('comics');
+Route::get('/comics', 'ComicController@comics')->name('comics');
 
-Route::get('/details/{id}', function ($id) {
-    $data = config('comics');
-    $data = ['comic' => $data[$id]];
-    return view('dettagli', $data);
-})->name('dettaglio');
+Route::get('/details/{id}', 'ComicController@details')->name('dettaglio');
