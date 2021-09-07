@@ -1,0 +1,101 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+header li {
+  display: inline-block;
+  margin-right: 20px;
+}
+header li a {
+  color: black;
+  text-transform: uppercase;
+}
+
+main .jambotrom {
+  height: 500px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+  position: relative;
+}
+main .container {
+  background-color: black;
+  text-align: center;
+}
+main .container .gallery {
+  display: flex;
+  width: calc(100% / 6 - 40px);
+}
+main .container .gallery .card {
+  margin: 20px;
+}
+main .container .gallery .card a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+main .container .gallery .card img {
+  width: 100px;
+  margin-right: 20px;
+}
+main .container .button2 {
+  width: 200px;
+}
+main .container .button2 h3 {
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  background-color: #0282F9;
+  text-align: center;
+}
+main .container .button {
+  width: 200px;
+}
+main .container .button h3 {
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+  background-color: #0282F9;
+}
+
+footer {
+  height: 300px;
+  padding: 10px;
+  background-image: url(../img/footer-bg.jpg);
+  display: flex;
+  justify-content: space-around;
+}
+footer .container {
+  display: flex;
+  padding: 10px;
+}
+footer .container .box {
+  margin-right: 50px;
+}
+footer .container .box h3 {
+  text-transform: uppercase;
+  color: white;
+  margin: 10px 0;
+}
+footer .container .box ul {
+  list-style: none;
+}
+footer .container .box ul a {
+  text-decoration: none;
+  color: gray;
+}

@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+
+    li{
+        display: inline-block;
+        margin-right: 20px;
+
+        a{
+            color: black;
+            text-transform: uppercase;
+        }
+        
+    }
+}

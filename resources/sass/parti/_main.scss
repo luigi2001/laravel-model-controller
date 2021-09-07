@@ -1,0 +1,55 @@
+main{
+    
+    
+    .jambotrom{
+        height: 500px;
+        background-image: url('../img/jumbotron.jpg');
+        background-size: cover;
+        position: relative;
+    }
+
+    .container{
+        background-color: black;
+        text-align: center;
+
+        .gallery{
+            display: flex;
+            width: calc(100% / 6 - 40px);
+            
+            .card{
+                margin: 20px;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: white;
+                }
+                        
+                img{
+                    width: 100px;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .button2{
+            width: 200px;
+            h3{
+                text-transform: uppercase;
+                color: white;
+                padding: 10px;
+                background-color: #0282F9;
+                text-align: center;
+            }
+        }
+
+        .button{
+            width: 200px;
+            h3{
+                text-transform: uppercase;
+                color: white;
+                padding: 10px;
+                background-color: #0282F9;
+            }
+        }
+    }
+}
